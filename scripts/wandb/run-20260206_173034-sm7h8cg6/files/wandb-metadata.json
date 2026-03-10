@@ -1,0 +1,32 @@
+{
+  "os": "Windows-10-10.0.26200-SP0",
+  "python": "CPython 3.9.23",
+  "startedAt": "2026-02-06T09:30:34.853098Z",
+  "args": [
+    "--config_file",
+    "../config/dense_config.yaml",
+    "--generator_type",
+    "EnhancedBetaTCVAE",
+    "--discriminator_type",
+    "UNet3P"
+  ],
+  "program": "E:\\diverse_synth\\scripts\\train_with_wandb.py",
+  "codePath": "train_with_wandb.py",
+  "codePathLocal": "train_with_wandb.py",
+  "email": "2745302895@qq.com",
+  "root": "E:\\diverse_synth\\scripts",
+  "host": "DESKTOP-7BBR1KD",
+  "executable": "D:\\Anaconda\\envs\\diverse_synth1\\python.exe",
+  "cpu_count": 12,
+  "cpu_count_logical": 16,
+  "disk": {
+    "/": {
+      "total": "273930117120",
+      "used": "117703335936"
+    }
+  },
+  "memory": {
+    "total": "16873676800"
+  },
+  "writerId": "2pw6v3todmm18baeqjni0fp4b4cv3l4n"
+}

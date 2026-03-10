@@ -1,0 +1,33 @@
+Running code on cpu
+Applying no_filtering filtering
+ERROR: No folders in ../dump/dense matched the scene_ids from CSV.
+Sample ID from CSV: 9e8b8e5d-85fe-42ab-b582-7a8484399699_DiningRoom-15222
+Folders found in disk: ['3D-FRONT', 'dataset_stats.txt']
+Traceback (most recent call last):
+  File "E:\diverse_synth\scripts\train_with_wandb.py", line 413, in <module>
+    main(sys.argv[1:])
+  File "E:\diverse_synth\scripts\train_with_wandb.py", line 119, in main
+    train_dataset = get_encoded_dataset(
+  File "E:\diverse_synth\synthesis\datasets\FrontDataset.py", line 17, in get_encoded_dataset
+    _, encoding = get_dataset_raw_and_encoded(
+  File "E:\diverse_synth\synthesis\datasets\FrontDataset.py", line 57, in get_dataset_raw_and_encoded
+    dataset = get_raw_dataset(config, filter_fn, path_to_bounds, split=split)
+  File "E:\diverse_synth\synthesis\datasets\FrontDataset.py", line 34, in get_raw_dataset
+    dataset = CachedFront(
+  File "E:\diverse_synth\synthesis\datasets\FRONT.py", line 196, in __init__
+    raise IndexError("self._tags is empty. ID mismatch between CSV and folders.")
+IndexError: self._tags is empty. ID mismatch between CSV and folders.
+Traceback (most recent call last):
+  File "E:\diverse_synth\scripts\train_with_wandb.py", line 413, in <module>
+    main(sys.argv[1:])
+  File "E:\diverse_synth\scripts\train_with_wandb.py", line 119, in main
+    train_dataset = get_encoded_dataset(
+  File "E:\diverse_synth\synthesis\datasets\FrontDataset.py", line 17, in get_encoded_dataset
+    _, encoding = get_dataset_raw_and_encoded(
+  File "E:\diverse_synth\synthesis\datasets\FrontDataset.py", line 57, in get_dataset_raw_and_encoded
+    dataset = get_raw_dataset(config, filter_fn, path_to_bounds, split=split)
+  File "E:\diverse_synth\synthesis\datasets\FrontDataset.py", line 34, in get_raw_dataset
+    dataset = CachedFront(
+  File "E:\diverse_synth\synthesis\datasets\FRONT.py", line 196, in __init__
+    raise IndexError("self._tags is empty. ID mismatch between CSV and folders.")
+IndexError: self._tags is empty. ID mismatch between CSV and folders.
