@@ -1,0 +1,39 @@
+services:
+  client_bedroom:
+    image: fl-client:latest
+    environment:
+      - CLIENT_ID=1
+      - ROOM_TYPE=bedroom
+      - SERVER_URL=http://<ECS公网IP>:5000
+      - LOCAL_EPOCHS=1
+    gpus: all
+    volumes:
+      - /data/bedroom_dump:/workspace/diverse_synth/dump/bedroom
+      - /data/fl_savepoint:/workspace/diverse_synth/savepoint
+      - /data/fl_output:/workspace/diverse_synth/output
+
+  client_livingroom:
+    image: fl-client:latest
+    environment:
+      - CLIENT_ID=2
+      - ROOM_TYPE=livingroom
+      - SERVER_URL=http://<ECS公网IP>:5000
+      - LOCAL_EPOCHS=1
+    gpus: all
+    volumes:
+      - /data/livingroom_dump:/workspace/diverse_synth/dump/livingroom
+      - /data/fl_savepoint:/workspace/diverse_synth/savepoint
+      - /data/fl_output:/workspace/diverse_synth/output
+
+  client_diningroom:
+    image: fl-client:latest
+    environment:
+      - CLIENT_ID=3
+      - ROOM_TYPE=diningroom
+      - SERVER_URL=http://<ECS公网IP>:5000
+      - LOCAL_EPOCHS=1
+    gpus: all
+    volumes:
+      - /data/diningroom_dump:/workspace/diverse_synth/dump/diningroom
+      - /data/fl_savepoint:/workspace/diverse_synth/savepoint
+      - /data/fl_output:/workspace/diverse_synth/output
