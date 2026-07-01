@@ -17,12 +17,11 @@ app = Flask(__name__)
 HOST = os.getenv("GPU_NODE_HOST", "0.0.0.0")
 PORT = int(os.getenv("GPU_NODE_PORT", "8000"))
 
-# AutoDL 上的代码根目录（包含 diverse_synth/）
+# 代码根目录（包含 diverse_synth/）
 PROJECT_ROOT = os.getenv("GPU_NODE_PROJECT_ROOT", os.getcwd())
 SCRIPTS_DIR = os.path.join(PROJECT_ROOT, "diverse_synth", "scripts")
 
-# 模板 checkpoint（必须提前生成，见下方说明）
-# 例：/srv/templates/template_bedroom.tar
+# 模板 checkpoint
 TEMPLATE_DIR = os.getenv("GPU_NODE_TEMPLATE_DIR", "/srv/templates")
 
 # 互斥锁：保证单 GPU 串行
@@ -38,7 +37,6 @@ def _bytes_to_b64(b: bytes) -> str:
 
 
 def _template_path(room: str) -> str:
-    # 你可以按需调整命名规则
     return os.path.join(TEMPLATE_DIR, f"template_{room}.tar")
 
 
