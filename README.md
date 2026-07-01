@@ -1,7 +1,3 @@
-## Datasets
-
-Based on [3D-FRONT](https://tianchi.aliyun.com/specials/promotion/alibaba-3d-scene-dataset)  and 3D-Future darasets.
-
 ---
 
 ## Table of Contents
@@ -61,21 +57,6 @@ This project uses:
 - 3D-FUTURE Dataset
 
 Before running the project, configure the dataset paths in the preprocessing scripts and configuration files.
-
-Expected directory structure example:
-
-```text
-project_root/
-├── config/
-├── dump/
-│   ├── 3D-FRONT/
-│   ├── 3D-FUTURE-model/
-│   └── 3D-FRONT-texture/
-├── render_scene/
-├── savepoint/
-├── metrics/
-└── ...
-```
 
 ---
 
