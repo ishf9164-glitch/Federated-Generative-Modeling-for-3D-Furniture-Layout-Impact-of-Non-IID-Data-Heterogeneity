@@ -1,15 +1,6 @@
-# Fast and Diverse Indoor Furniture Layout Synthesis via Deep Generative Models
+## Datasets
 
-本项目基于 [3D-FRONT](https://tianchi.aliyun.com/specials/promotion/alibaba-3d-scene-dataset) 和 3D-FUTURE 数据集，实现 3D 室内场景家具布局生成。
-
-项目覆盖以下流程：
-
-- 3D-FRONT / 3D-FUTURE 数据预处理
-- 多种房间类型与风格划分
-- 深度生成模型训练
-- 基于 FedAvg 的多客户端联邦训练
-- 家具布局场景生成与渲染
-- FID、IoU 和 KL 散度等指标评估
+Based on [3D-FRONT](https://tianchi.aliyun.com/specials/promotion/alibaba-3d-scene-dataset) 
 
 ---
 
